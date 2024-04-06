@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color:#131314;
+  height: 100%;
+}
+
+::selection {
+  background: rgb(149, 255, 175);
+}
+
+.App {
+  text-align: justify;
+}
+
+.greencolor {
+  color: rgb(149, 255, 175);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #ffffff;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Navbar {
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  background:#131314;
+  color: white;
+  padding: 10px 0px;
+}
+
+.AY {
+  color: rgb(149, 255, 175);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline;
+  font-size: x-large;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 2px;
+  transition-duration: 0.4s;
+  animation: opacity 1s forwards;
+  cursor: pointer;
+  margin: 15px;
+  padding: 10px;
+}
+
+.Navbaritem {
+  color: rgb(223, 223, 223);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline;
+  font-size: large;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 2px;
+  animation: opacity 1s forwards;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 15px;
+  padding: 10px;
+}
+
+@keyframes navbarani {
+  0% { transform: translateY(-20px)}
+  100% { transform: translateX(0)}
+}
+
+@keyframes opacity {
+  0% { opacity: 0% }
+  100% { opacity: 100% }  
+}
+
+.homepage a {
+  color: rgb(223, 223, 223);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 15px;
+  min-width: 400px;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  color: rgb(149, 255, 175);
+  text-shadow: 0 0 10px rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}
+
+.navbd {
+  border: none;
+  position: fixed;
+  top: 70px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #3d3d3d;
+  width: 100%;
+  min-width: 450px;
+  margin-bottom: 200px;
+  animation: opacity 1s forwards;
+}
+
+.aboutbd {
+  border: none;
+  background-color: #3d3d3d;
+  height: 2px;
+  border-radius: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.topgap {
+  margin: 300px;
+}
+
+.gap {
+  margin: 400px;
+}
+
+.homepage {
+  font-family: "Space Mono", monospace;
+  background-color:#131314;
+  margin: auto;
+  width: 55%;
+}
+
+@keyframes blinking {
+  from, to { border-color: transparent}
+  50% { border-color: rgb(255, 255, 255); height: 50%; }
+}
+
+@keyframes greenblinking {
+  from, to { border-color: transparent}
+  50% { border-color: rgb(149, 255, 175); height: 50%; }
+}
+
+@keyframes greyblinking {
+  from, to { border-color: transparent}
+  50% { border-color: rgb(156, 156, 156); height: 50%; }
+}
+
+.blinker {
+  border-right: .15em solid rgb(255, 255, 255);
+}
+
+.hi {
+  font-size: 1.05vw;
+  letter-spacing: 0.2vw;
+  margin-bottom: -5px;
+  color: rgb(149, 255, 175);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typinghi 10s steps(8, end) forwards, greenblinking 1s step-end infinite;
+  transition-duration: 0.4s;
+}
+
+@keyframes typinghi {
+  0% { width: 0% }
+  3% { width: 0%}
+  5% { width: 5.5% }
+  7% { width: 5.5% }
+  10% { width: 22% }
+  100% {width: 22% }
+}
+
+.title {
+  font-size: 3.7vw;
+  letter-spacing: 0.5vw;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingtitle 10s steps(13, end) forwards, blinking 1s step-end infinite;
+  transition-duration: 0.4s;
+}
+
+@keyframes typingtitle {
+  0% { width: 0% }
+  12% {width: 0%}
+  15% { width: 48% }
+  17.5% { width: 48% }
+  22% { width: 100% }
+  100% { width: 100% }
+}
+
+.descrip {
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  margin-top: 10px;
+  color: rgb(189, 189, 189);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingdescrip 10s steps(13, end) forwards, greyblinking 1s step-end infinite;
+  transition-duration: 0.4s;
+}
+
+@keyframes typingdescrip {
+  0% { width: 0 }
+  25% { width: 0% }
+  28% { width: 42% }
+  31% {width: 42%}
+  34% {width: 82%}
+  100% {width: 82%}
+
+}
+
+.descrip2 {
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  margin-top: 10px;
+  color: rgb(189, 189, 189);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingdescrip2 10s steps(13, end) forwards, blinking 1s step-end infinite;
+  transition-duration: 0.4s;
+}
+
+@keyframes typingdescrip2 {
+  0% { width: 0% }
+  34% { width: 0% }
+  37% { width: 17% }
+  39% {width: 17%}
+  42% {width: 60%}
+  100% {width: 60%}
+}
+
+.cvarea {
+  color: rgb(255, 255, 255);
+  opacity: 0%;
+  animation: opacity 1s forwards;
+  animation-delay: 5s;
+}
+
+.cvbutton {
+  font-family: "Space Mono", monospace;
+  font-size: 1vw;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 24px;
+  border: none;
+  cursor: pointer;
+  margin-left: -15px;
+  margin-top: 10px;
+  background-color: #282c34;
+  color: rgb(255, 255, 255);
+  transition-duration: 0.4s;
+}
+
+.cvbutton:hover {
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}
+
+.about{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.aboutpage {
+  font-family: "Space Mono", monospace;
+  margin-right: 20px;
+  width: 60%;
+  background-color: #1f1f20;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.aboutpage2 {
+  font-family: "Space Mono", monospace;
+  height: auto;
+  margin-left: 20px;
+  background-color: #1f1f20;
+  padding: 30px 60px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.abouttitle {
+  font-size: 3.7vw;
+  letter-spacing: 0.5vw;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typingabout {
+  0% { width: 0% }
+  100% {width: 100%;}
+}
+
+.aboutdescrip {
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  margin-top: 10px;
+  color: rgb(189, 189, 189);
+  white-space: normal;
+  line-height: 2vw;
+}
+
+.aboutbutton {
+  font-family: "Space Mono", monospace;
+  font-size: 1vw;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #282c34;
+  color: rgb(255, 255, 255);
+}
+
+.aboutbutton:hover {
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}
+
+.profilepicture {
+  width: 10vw;
+  align-self: center;
+  border-radius: 100px;
+}
+
+.profiletitle {
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+}
+
+.profilelocation {
+  font-size: 0.8vw;
+  color: rgb(189, 189, 189);
+  margin-top: -30px;
+}
+
+.portfoliopage {
+  font-family: "Space Mono", monospace;
+  margin: auto;
+  width: 75%;
+}
+
+.portfoliotitle {
+  font-size: 3.7vw;
+  letter-spacing: 0.5vw;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 30px 60px;
+}
+
+.portfoliodescrip {
+  font-size: 1vw;
+  letter-spacing: 0.2vw;
+  margin-top: 10px;
+  color: rgb(189, 189, 189);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.portfolio-container {
+  width: 100%;
+  display: grid;
+  grid-auto-rows: auto;
+}
+
+.portfolio-1strow {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.proj1{
+  font-family: "Space Mono", monospace;
+  margin-right: 20px;
+  width: 60%;
+  background-color: #1f1f20;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.proj2{
+  font-family: "Space Mono", monospace;
+  height: auto;
+  margin-left: 20px;
+  background-color: #1f1f20;
+  padding: 30px 60px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.portfolio-2ndrow {
+  width: 100%;
+  padding-top: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.proj3{
+  font-family: "Space Mono", monospace;
+  width: 40%;
+  background-color: #1f1f20;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+.proj4{
+  font-family: "Space Mono", monospace;
+  margin-left: 40px;
+  width: 60%;
+  background-color: #1f1f20;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.portfolio-container h1 {
+  font-size: 1.7vw;
+  letter-spacing: 0.1vw;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.portfolio-container p {
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  margin-top: 10px;
+  color: rgb(189, 189, 189);
+  white-space: normal;
+  line-height: 2vw;
+}
+
+.portfolio-difficulty {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.githubicon {
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+  color: rgb(189, 189, 189);
+  white-space: normal;
+  line-height: 2vw;
+  display: inline;
+}
+
+.contactpage {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;  
+}
+
+.contactform {
+  font-family: "Space Mono", monospace;
+  height: auto;
+  margin: auto;
+  width: 100%;
+  padding: 30px 60px;
+  background-color: #1f1f20;
+}
+
+.active {
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}
+
+.errorpage {
+  font-family: "Space Mono", monospace;
+  margin: auto;
+  width: 55%;
+}
+
+.errorcode {
+  font-size: 1.05vw;
+  letter-spacing: 0.2vw;
+  margin-bottom: -5px;
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+  animation: opacity 1s forwards;
+}
+
+.errortitle {
+  font-size: 2.6vw;
+  letter-spacing: 0.2vw;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  transition-duration: 0.4s;
+  animation: opacity 2s forwards;
+}
+
+.errorarea {
+  color: rgb(255, 255, 255);
+}
+
+.errorbutton {
+    font-family: "Space Mono", monospace;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 7px;
+    padding: 5px 24px;
+    border: none;
+    cursor: pointer;
+    background-color: #282c34;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s;
+    animation: opacity 3s forwards;
+  }
+
+  .errorbutton:hover {
+    color: rgb(149, 255, 175);
+  }
+
+  
