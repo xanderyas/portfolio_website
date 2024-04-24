@@ -19,7 +19,7 @@ export const Aboutpage = () => {
             </div>
             <div className='aboutpage2'>
                 <img className="profilepicture"src="https://media.licdn.com/dms/image/C5603AQEs8IMYh8R3Lg/profile-displayphoto-shrink_200_200/0/1602772703322?e=1716422400&v=beta&t=xs0D21h0eQSpoSP6VtIplo6QMCz2uTm2nYdb9goH-yM" alt="LinkedIn Profile Picture"></img>
-                <h4 className='profiletitle'>Python / Web Developer</h4>
+                <h4 className='profiletitle'>Software Developer</h4>
                 <p className='profilelocation'> London, England</p>
                 <a href="https://www.linkedin.com/in/xanderyasruddin/" target="_blank">
                     <button className='aboutbutton'><b>Linkedin</b></button>
