@@ -9,6 +9,12 @@ body {
   background: rgb(149, 255, 175);
 }
 
+@media (max-width: 700px) {
+  .about {   
+    flex-direction: column;
+  }
+}
+
 .App {
   text-align: justify;
 }
@@ -281,13 +287,12 @@ a:hover {
   width: 75%;
   margin: auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .aboutpage {
   font-family: "Space Mono", monospace;
-  margin-right: 20px;
   width: 60%;
   background-color: #1f1f20;
   padding: 30px 60px;
@@ -296,8 +301,7 @@ a:hover {
 
 .aboutpage2 {
   font-family: "Space Mono", monospace;
-  height: auto;
-  margin-left: 20px;
+  width: 30%;
   background-color: #1f1f20;
   padding: 30px 60px;
   border-radius: 10px;
@@ -305,9 +309,21 @@ a:hover {
   place-items: center;
 }
 
+@media (max-width: 1460px) {
+
+  .about {
+    flex-direction: column;
+  }
+  
+  .aboutpage, .aboutpage2 {
+    width: calc(100% - 140px);
+    margin: 10px;
+  }
+}
+
 .abouttitle {
-  font-size: 3.7vw;
-  letter-spacing: 0.5vw;
+  font-size: 50px;
+  letter-spacing: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
@@ -321,17 +337,17 @@ a:hover {
 }
 
 .aboutdescrip {
-  font-size: 1vw;
-  letter-spacing: 0.1vw;
+  font-size: 20px;
+  letter-spacing: 1px;
   margin-top: 10px;
   color: rgb(189, 189, 189);
   white-space: normal;
-  line-height: 2vw;
+  line-height: 40px;
 }
 
 .aboutbutton {
   font-family: "Space Mono", monospace;
-  font-size: 1vw;
+  font-size: 20px;
   text-align: center;
   border-radius: 7px;
   padding: 5px 24px;
@@ -347,18 +363,18 @@ a:hover {
 }
 
 .profilepicture {
-  width: 10vw;
+  width: 200px;
   align-self: center;
   border-radius: 100px;
 }
 
 .profiletitle {
-  font-size: 1vw;
+  font-size: 20px;
   color: rgb(255, 255, 255);
 }
 
 .profilelocation {
-  font-size: 0.8vw;
+  font-size: 15px;
   color: rgb(189, 189, 189);
   margin-top: -30px;
 }
