@@ -182,7 +182,6 @@ a:hover {
   overflow: hidden;
   white-space: nowrap;
   animation: typinghi 10s steps(8, end) forwards, greenblinking 1s step-end infinite;
-  transition-duration: 0.4s;
 }
 
 @keyframes typinghi {
@@ -203,7 +202,6 @@ a:hover {
   overflow: hidden;
   white-space: nowrap;
   animation: typingtitle 10s steps(13, end) forwards, blinking 1s step-end infinite;
-  transition-duration: 0.4s;
 }
 
 @keyframes typingtitle {
@@ -223,7 +221,6 @@ a:hover {
   overflow: hidden;
   white-space: nowrap;
   animation: typingdescrip 10s steps(13, end) forwards, greyblinking 1s step-end infinite;
-  transition-duration: 0.4s;
 }
 
 @keyframes typingdescrip {
@@ -244,7 +241,6 @@ a:hover {
   overflow: hidden;
   white-space: nowrap;
   animation: typingdescrip2 10s steps(13, end) forwards, blinking 1s step-end infinite;
-  transition-duration: 0.4s;
 }
 
 @keyframes typingdescrip2 {
@@ -273,9 +269,8 @@ a:hover {
   cursor: pointer;
   margin-left: -15px;
   margin-top: 10px;
-  background-color: #282c34;
+  background-color: rgb(54, 54, 54);
   color: rgb(255, 255, 255);
-  transition-duration: 0.4s;
 }
 
 .cvbutton:hover {
@@ -317,7 +312,7 @@ a:hover {
   }
   
   .aboutpage, .aboutpage2 {
-    width: calc(100% - 140px);
+    width: calc(100% - 100px);
     margin: 10px;
   }
 }
@@ -354,7 +349,7 @@ a:hover {
   padding: 5px 24px;
   border: none;
   cursor: pointer;
-  background-color: #282c34;
+  background-color: rgb(54, 54, 54);
   color: rgb(255, 255, 255);
 }
 
@@ -384,89 +379,90 @@ a:hover {
 .portfoliopage {
   font-family: "Space Mono", monospace;
   margin: auto;
-  width: 75%;
+  width: 65%;
 }
 
 .portfoliotitle {
-  font-size: 3.7vw;
-  letter-spacing: 0.5vw;
+  font-size: 40px;
+  letter-spacing: 10px;
   margin-top: 10px;
   margin-bottom: -10px;
   color: rgb(255, 255, 255);
   overflow: hidden;
   white-space: nowrap;
-  padding: 30px 60px;
-}
-
-.portfoliodescrip {
-  font-size: 1vw;
-  letter-spacing: 0.2vw;
-  margin-top: 10px;
-  color: rgb(189, 189, 189);
-  overflow: hidden;
-  white-space: nowrap;
+  padding: 20px 40px;
 }
 
 .portfolio-container {
   width: 100%;
   display: grid;
-  grid-auto-rows: auto;
 }
 
 .portfolio-1strow {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  flex-direction: row;
+  gap: 40px;
 }
+
+.portfolio-2ndrow {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
 .proj1{
   font-family: "Space Mono", monospace;
-  margin-right: 20px;
-  width: 60%;
+  width: 50%;
   background-color: #1f1f20;
-  padding: 30px 60px;
+  padding: 20px 40px;
   border-radius: 10px;
 }
 
 .proj2{
   font-family: "Space Mono", monospace;
   height: auto;
-  margin-left: 20px;
   background-color: #1f1f20;
-  padding: 30px 60px;
-  width: 40%;
+  padding: 20px 40px;
+  width: 50%;
   border-radius: 10px;
 }
 
-.portfolio-2ndrow {
-  width: 100%;
-  padding-top: 40px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.proj3{
-  font-family: "Space Mono", monospace;
-  width: 40%;
-  background-color: #1f1f20;
-  padding: 30px 60px;
-  border-radius: 10px;
-}
 .proj4{
   font-family: "Space Mono", monospace;
-  margin-left: 40px;
-  width: 60%;
+  width: 100%;
   background-color: #1f1f20;
-  padding: 30px 60px;
+  padding: 20px 40px;
   border-radius: 10px;
+}
+
+@media (max-width: 1460px) {
+
+  .portfoliopage {
+    width: 80%;
+  }
+
+  .portfolio-1strow, .portfolio-2ndrow {
+    width: calc(100% - 100px);
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .portfoliotitle {
+    margin-left: 10px;
+  }
+
+  .proj1, .proj2 {
+    width: 100%;
+  }
 }
 
 .portfolio-container h1 {
-  font-size: 1.7vw;
-  letter-spacing: 0.1vw;
+  font-size: 30px;
+  letter-spacing: 0.7px;
   margin-top: 10px;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
@@ -475,12 +471,12 @@ a:hover {
 }
 
 .portfolio-container p {
-  font-size: 1vw;
-  letter-spacing: 0.1vw;
+  font-size: 15px;
+  letter-spacing: 0.4px;
   margin-top: 10px;
   color: rgb(189, 189, 189);
   white-space: normal;
-  line-height: 2vw;
+  line-height: 35px;
 }
 
 .portfolio-difficulty {
@@ -490,7 +486,7 @@ a:hover {
   align-items: center;
 }
 .githubicon {
-  font-size: 2vw;
+  font-size: 30px;
   letter-spacing: 0.1vw;
   color: rgb(189, 189, 189);
   white-space: normal;
@@ -499,20 +495,77 @@ a:hover {
 }
 
 .contactpage {
-    width: 75%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;  
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.contactform {
+.contactpage2 {
   font-family: "Space Mono", monospace;
-  height: auto;
-  margin: auto;
   width: 100%;
-  padding: 30px 60px;
   background-color: #1f1f20;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+label {
+  color: rgb(189, 189, 189);
+  letter-spacing: 0.4px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+input, textarea{
+  font-family: "Space Mono", monospace;
+  letter-spacing: 0.4px;
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  box-shadow: none;
+  border-radius: 10px;
+  box-sizing: border-box; 
+  margin-bottom: 30px;
+  text-indent: 10px;
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.message {
+  height: 150px;
+  resize: none;
+}
+
+.submit {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.submit:hover {
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}
+
+@media (max-width: 1460px) {
+
+  .contactpage {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .contactpage2 {
+    width: calc(100% - 100px);
+    margin: 10px;
+  }
 }
 
 .active {
@@ -567,4 +620,50 @@ a:hover {
     color: rgb(149, 255, 175);
   }
 
-  
+  .cvpage {
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50%;
+  background-color: white;
+  padding: 40px 40px;
+  border-radius: 10px;
+  }
+
+.cvname {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.cvtitle {
+  color: black;
+  font-size: 25px;
+}
+
+.cvsubtitle {
+  color: black;
+  margin-bottom: -10px;
+}
+
+.cvtext {
+  color: black;
+}
+
+.cvback {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #3d3d3d;
+  color: white;
+}
+
+.cvback:hover {
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}

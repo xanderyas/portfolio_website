@@ -1,5 +1,4 @@
 import '../App.css';
-import { motion, useScroll } from "framer-motion"
 
 export const Aboutpage = () => {
 

@@ -12,17 +12,17 @@ export const Navbar = () => {
             </div>
             <ul>
                 <li className='Navbaritem'>
-                        <Link activeClass="active" to="aboutpage" spy={true} smooth={true} offset={-250} duration={500}>
+                        <Link activeClass="active" to="aboutpage" spy={true} smooth={true} offset={-270} duration={500}>
                             About
                         </Link>
                 </li>
                 <li className='Navbaritem'>
-                        <Link activeClass="active" to="portfoliopage" spy={true} smooth={true} offset={-95} duration={500}>
+                        <Link activeClass="active" to="portfoliopage" spy={true} smooth={true} offset={-150} duration={500}>
                             Portfolio
                         </Link>
                 </li>
                 <li className='Navbaritem'>
-                        <Link activeClass="active" to="contactpage" spy={true} smooth={true} offset={-300} duration={500}>
+                        <Link activeClass="active" to="contactpage" spy={true} smooth={true} offset={-160} duration={500}>
                             Contact
                         </Link>
                 </li>
