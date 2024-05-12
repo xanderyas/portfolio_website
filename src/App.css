@@ -304,7 +304,7 @@ a:hover {
   place-items: center;
 }
 
-@media (max-width: 1460px) {
+@media (max-width: 1150px) {
 
   .about {
     width: 80%;
@@ -368,6 +368,7 @@ a:hover {
   font-size: 18px;
   letter-spacing: 0.5px;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .profilelocation {
@@ -439,7 +440,7 @@ a:hover {
   border-radius: 10px;
 }
 
-@media (max-width: 1460px) {
+@media (max-width: 1150px) {
 
   .portfoliopage {
     width: 80%;
