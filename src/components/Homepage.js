@@ -54,7 +54,7 @@ export const Homepage = () => {
                     </Link>
                 </div>
             </div>
-            <div className='gap'></div>        
+            <div className='gap2'></div>        
         </div>
     )
 }

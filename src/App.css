@@ -148,6 +148,10 @@ a:hover {
   margin: 400px;
 }
 
+.gap2 {
+  margin: 400px;
+}
+
 .homepage {
   font-family: "Space Mono", monospace;
   background-color:#131314;
@@ -304,18 +308,7 @@ a:hover {
   place-items: center;
 }
 
-@media (max-width: 1150px) {
 
-  .about {
-    width: 80%;
-    flex-direction: column;
-  }
-  
-  .aboutpage, .aboutpage2 {
-    width: calc(100% - 100px);
-    margin: 10px;
-  }
-}
 
 .abouttitle {
   font-size: 40px;
@@ -356,6 +349,45 @@ a:hover {
 .aboutbutton:hover {
   color: rgb(149, 255, 175);
   transition-duration: 0.4s;
+}
+
+.aboutbutton2 {
+  float: right;
+  margin-top: 10px;
+  display: none;
+  font-family: "Space Mono", monospace;
+  font-size: 35px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: #1f1f20;;
+  color: white;
+}
+
+.aboutbutton2:hover {
+  color: rgb(149, 255, 175);
+  transition-duration: 0.4s;
+}
+
+@media (max-width: 1150px) {
+
+  .about {
+    width: 80%;
+    flex-direction: column;
+  }
+  
+  .aboutpage, .aboutpage2 {
+    width: calc(100% - 100px);
+    margin: 10px;
+  }
+
+  .aboutpage2 {
+    display: none;
+  }
+
+  .aboutbutton2 {
+    display: inline-block;
+  }
 }
 
 .profilepicture {
