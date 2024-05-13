@@ -700,3 +700,32 @@ input, textarea{
   color: rgb(149, 255, 175);
   transition-duration: 0.4s;
 }
+
+@media (max-width: 600px) {
+
+  .about {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .aboutpage, .aboutpage2 {
+    width: calc(100% - 90px);
+  }
+
+  .portfoliopage {
+    width: 100%;
+  }
+
+  .portfolio-1strow, .portfolio-2ndrow {
+    width: calc(100% - 90px);
+    flex-direction: column;
+  }
+
+  .contactpage {
+    width: 100%;
+  }
+
+  .contactpage2 {
+    width: calc(100% - 90px);
+  }
+}
