@@ -658,7 +658,7 @@ input, textarea{
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 50%;
+  width: 55%;
   background-color: white;
   padding: 40px 40px;
   border-radius: 10px;
@@ -672,17 +672,48 @@ input, textarea{
 
 .cvtitle {
   color: black;
-  font-size: 25px;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.cvsubtitlearea {
+  color: black;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cvsubtitle {
+  color:black;
+}
+
+.cvdate {
+font-style: italic;
+}
+
+.cvdescrip {
   color: black;
-  margin-bottom: -10px;
+}
+
+.cvtextarea {
+  color: black;
+}
+
+.cvbullet {
+  color: black;
+  margin-left: 30px;
 }
 
 .cvtext {
-  color: black;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  margin-left: 50px;
 }
+
+.cvdate {
+  text-align: right;
+}
+
 
 .cvback {
   font-family: "Space Mono", monospace;
@@ -699,6 +730,14 @@ input, textarea{
 .cvback:hover {
   color: rgb(149, 255, 175);
   transition-duration: 0.4s;
+}
+
+@media (max-width: 1300px) {
+
+  .cvpage {
+    width: 80%;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -726,6 +765,10 @@ input, textarea{
   }
 
   .contactpage2 {
+    width: calc(100% - 90px);
+  }
+
+  .cvpage {
     width: calc(100% - 90px);
   }
 }
